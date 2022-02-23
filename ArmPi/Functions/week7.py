@@ -68,21 +68,21 @@ class Perception(object):
     
     def set_rgb(color):
         if color == "red":
-        Board.RGB.setPixelColor(0, Board.PixelColor(255, 0, 0))
-        Board.RGB.setPixelColor(1, Board.PixelColor(255, 0, 0))
-        Board.RGB.show()
-    elif color == "green":
-        Board.RGB.setPixelColor(0, Board.PixelColor(0, 255, 0))
-        Board.RGB.setPixelColor(1, Board.PixelColor(0, 255, 0))
-        Board.RGB.show()
-    elif color == "blue":
-        Board.RGB.setPixelColor(0, Board.PixelColor(0, 0, 255))
-        Board.RGB.setPixelColor(1, Board.PixelColor(0, 0, 255))
-        Board.RGB.show()
-    else:
-        Board.RGB.setPixelColor(0, Board.PixelColor(0, 0, 0))
-        Board.RGB.setPixelColor(1, Board.PixelColor(0, 0, 0))
-        Board.RGB.show()
+            Board.RGB.setPixelColor(0, Board.PixelColor(255, 0, 0))
+            Board.RGB.setPixelColor(1, Board.PixelColor(255, 0, 0))
+            Board.RGB.show()
+        elif color == "green":
+            Board.RGB.setPixelColor(0, Board.PixelColor(0, 255, 0))
+            Board.RGB.setPixelColor(1, Board.PixelColor(0, 255, 0))
+            Board.RGB.show()
+        elif color == "blue":
+            Board.RGB.setPixelColor(0, Board.PixelColor(0, 0, 255))
+            Board.RGB.setPixelColor(1, Board.PixelColor(0, 0, 255))
+            Board.RGB.show()
+        else:
+            Board.RGB.setPixelColor(0, Board.PixelColor(0, 0, 0))
+            Board.RGB.setPixelColor(1, Board.PixelColor(0, 0, 0))
+            Board.RGB.show()
 
 
 
