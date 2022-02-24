@@ -11,6 +11,8 @@ from ArmIK.Transform import *
 from ArmIK.ArmMoveIK import *
 import HiwonderSDK.Board as Board
 from CameraCalibration.CalibrationConfig import *
+import logging
+logging.basicConfig(level=logging.DEBUG)
 
 if sys.version_info.major == 2:
     print('Please run this program with python3!')
@@ -27,7 +29,7 @@ class Perception(object):
             'green': (0, 255, 0),
             'black': (0, 0, 0),
             'white': (255, 255, 255),}
-    
+        
         __target_color = ('red',)
         return __target_color
         
@@ -84,5 +86,29 @@ class Perception(object):
             Board.RGB.setPixelColor(1, Board.PixelColor(0, 0, 0))
             Board.RGB.show()
 
-
+    def reset():
+        global count
+        global track
+        global _stop
+        global get_roi
+        global first_move
+        global center_list
+        global __isRunning
+        global detect_color
+        global action_finish
+        global start_pick_up
+        global __target_color
+        global start_count_t1
+        
+        count = 0
+        _stop = False
+        track = False
+        get_roi = False
+        center_list = []
+        first_move = True
+        __target_color = ()
+        detect_color = 'None'
+        action_finish = True
+        start_pick_up = False
+        start_count_t1 = True
 
