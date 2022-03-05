@@ -17,7 +17,7 @@ if sys.version_info.major == 2:
     sys.exit(0)
 
 AK = ArmIK()
-
+#comment
 range_rgb = {
     'red': (0, 0, 255),
     'blue': (255, 0, 0),
