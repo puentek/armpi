@@ -23,10 +23,7 @@ STANDARD_COORDS = {  # colors of the blocks that can be perceived
 DEBUG = False
 
 class StopError(Exception):
-    """
-    Dummy custom error to mark when arm must stop
-    """
-
+    "Stop. Do not continue"
     pass
 
 
@@ -45,16 +42,7 @@ class Motion(object):
         self.stop_event.set()
 
     def check_stop(f):
-        """
-        Function wrapper that checks if the calling object
-        (an instance of this class)'s stop_event is set,
-        raising a StopError if so.
-        This means we don't have to write "if not running"
-        a million times, just decorate each func.
-        AND, it really isn't necessary to call this on higher-level
-        functions that only serve to call lower level ones,
-        thus I only decorate the most commonly-used ones.
-        """
+        
 
         def wrapper(*args):
             # First arg is the calling object
