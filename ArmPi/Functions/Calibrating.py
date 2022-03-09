@@ -71,7 +71,8 @@ if __name__ == '__main__':
             
             gray = cv2.cvtColor(Frame, cv2.COLOR_BGR2GRAY)
             (thresh, blackAndWhiteImage) = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
-            cv2.imshow('Frame', blackAndWhiteImage)
+            Mask = cv2.bitwise_not(blackAndWhiteImage)
+            cv2.imshow('Frame', Mask)
             key = cv2.waitKey(1)
             if key == 27:
                 break
