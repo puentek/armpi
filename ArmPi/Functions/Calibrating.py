@@ -69,8 +69,8 @@ if __name__ == '__main__':
             frame = img.copy()
             Frame = run(frame)           
             
-            cv2.cvtColor(Frame, cv2.COLOR_BGR2GRAY)
-            cv2.imshow('Frame', Frame)
+            gray = cv2.cvtColor(Frame, cv2.COLOR_BGR2GRAY)
+            cv2.imshow('Frame', gray)
             key = cv2.waitKey(1)
             if key == 27:
                 break
