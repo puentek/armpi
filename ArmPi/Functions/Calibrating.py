@@ -63,6 +63,7 @@ if __name__ == '__main__':
     start()
     my_camera = Camera.Camera()
     my_camera.camera_open()
+    kernel = np.ones((5, 5), np.uint8)
     while True:
         img = my_camera.frame
         if img is not None:
@@ -72,6 +73,8 @@ if __name__ == '__main__':
             gray = cv2.cvtColor(Frame, cv2.COLOR_BGR2GRAY)
             (thresh, blackAndWhiteImage) = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
             Mask = cv2.bitwise_not(blackAndWhiteImage)
+            Mask = cv2.erode(Mask, kernel, iterations=1) 
+            Mask = cv2.dilate(Mask, kernel, iterations=1)   
             cv2.imshow('Frame', Mask)
             key = cv2.waitKey(1)
             if key == 27:
