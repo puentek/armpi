@@ -119,11 +119,14 @@ if __name__ == '__main__':
     my_camera = Camera.Camera()
     my_camera.camera_open()
     i = 0
-    while i < 20000:
+    while True:
         # status = no_motion(my_camera)
         print(str(i), my_camera.frame)
         # img = my_camera.frame
         i = i + 1
         #hand will begin to move
+        key = cv2.waitKey(1)
+        if key == 27:
+            break
     my_camera.camera_close()
     cv2.destroyAllWindows()
