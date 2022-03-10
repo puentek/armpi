@@ -67,6 +67,7 @@ if __name__ == '__main__':
     
     while True:
         img = my_camera.frame
+        print("img:",img)
         if img is not None:
             frame = img.copy()
             Frame = run(frame)           
@@ -86,7 +87,7 @@ if __name__ == '__main__':
             # Mask = cv2.bitwise_not(Mask)
             Mask = cv2.erode(Mask, kernel, iterations=1) 
             Mask = cv2.dilate(Mask, kernel, iterations=4)   
-            cv2.imshow('Frame', Frame)
+            
             cv2.imshow('Frame', Mask)
             # cv2.imshow('Frame', Frame)
             
