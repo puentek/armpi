@@ -99,7 +99,7 @@ def no_motion(my_camera):
                 frame_new = get_mask(f)
                 frame_final = frame_new-frame_i
                 v = np.sum(np.abs(frame_final))
-                print("value:", v, frame_final)
+                print("value:", v, frame_final , np.max(frame_new))
 
                 if v < threshold:
                     status = True
