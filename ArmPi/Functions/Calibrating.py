@@ -64,6 +64,7 @@ if __name__ == '__main__':
     my_camera = Camera.Camera()
     my_camera.camera_open()
     kernel = np.ones((5, 5), np.uint8)
+    haar_cascade = cv.CascadeClassifier('haar_face.xml')
     while True:
         img = my_camera.frame
         if img is not None:
@@ -87,6 +88,15 @@ if __name__ == '__main__':
             Mask = cv2.dilate(Mask, kernel, iterations=4)   
             cv2.imshow('Frame', Mask)
             #cv2.imshow('Frame', Frame)
+            ROI1 = frame[0:180, 0:320]
+            faces_rect1 = haar_cascade.detectMultiScale(ROI1, scaleFactor=1.1, minNeighbors=5)
+            for (x, y, w, h) in faces_rect1:
+                cv.rectangle(ROI1, (x, y), (x+w,y+h), (0,255,0), thickness=2)
+                t2 = time.time()
+                if (t2 - t1) > 1:
+                    print('I SEE YOU IN 1')
+                    t1 = time.time() # reset start time
+
             key = cv2.waitKey(1)
             if key == 27:
                 break
