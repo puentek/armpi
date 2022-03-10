@@ -97,7 +97,7 @@ def no_motion(my_camera):
             if img is not None:
                 f = img.copy()
                 frame_new = get_mask(f)
-                frame_final = frame_new-frame_i
+                frame_final = frame_new/255-frame_i/255
                 v = np.sum(np.abs(frame_final))
                 print("value:", v, frame_final , np.max(frame_new))
 
