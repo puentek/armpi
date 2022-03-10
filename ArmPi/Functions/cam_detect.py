@@ -119,7 +119,7 @@ if __name__ == '__main__':
     my_camera = Camera.Camera()
     my_camera.camera_open()
     i = 0
-    while i < 2000:
+    while i < 20000:
         # status = no_motion(my_camera)
         print(my_camera.frame)
         # img = my_camera.frame
