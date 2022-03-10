@@ -75,7 +75,7 @@ if __name__ == '__main__':
             # defining the lower and upper values of HSV,
             # this will detect blue colour
             Lower_hsv = np.array([60, 40, 40])
-            Upper_hsv = np.array([0, 200, 255])
+            Upper_hsv = np.array([125, 255, 255])
             
             # creating the mask by eroding,morphing,
             # dilating process
