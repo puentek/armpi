@@ -71,8 +71,8 @@ def no_motion(my_camera):
     return status
 
 if __name__ == '__main__':
-    init()
-    start()
+    # init()
+    # start()
     my_camera = Camera.Camera()
     my_camera.camera_open()
     i = 10
