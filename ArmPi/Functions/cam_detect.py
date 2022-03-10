@@ -88,7 +88,7 @@ def no_motion(my_camera):
     status = False
     # print("img: ", img)
     if img is not None:
-        print("in if")
+        # print("in if")
         f = img.copy()
         frame_i = get_mask(f) 
         fps = 16
@@ -99,7 +99,7 @@ def no_motion(my_camera):
                 frame_new = get_mask(f)
                 frame_final = frame_new-frame_i
                 v = np.sum(np.abs(frame_final))
-                logging.debug(f"value: {v}")
+                print("value:", v)
 
                 if v < threshold:
                     status = True
@@ -108,7 +108,8 @@ def no_motion(my_camera):
                 else: 
                     status = False
                     logging.debug("current status: ", status)
-                cv2.imshow('Frame', frame_new)            
+                cv2.imshow('Frame', frame_new)
+    print("status", status)            
     return status
 
 if __name__ == '__main__':
