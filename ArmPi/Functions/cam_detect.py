@@ -76,7 +76,7 @@ if __name__ == '__main__':
     # start()
     my_camera = Camera.Camera()
     my_camera.camera_open()
-    i = 10
+    i = 0
     while i < 10:
         status = no_motion(my_camera)
         img = my_camera.frame
