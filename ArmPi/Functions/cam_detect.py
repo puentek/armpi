@@ -121,7 +121,7 @@ if __name__ == '__main__':
     i = 0
     while i < 20000:
         # status = no_motion(my_camera)
-        print(my_camera.frame)
+        print(str(i), my_camera.frame)
         # img = my_camera.frame
         i = i + 1
         #hand will begin to move
