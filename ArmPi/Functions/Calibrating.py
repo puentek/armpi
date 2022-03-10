@@ -73,16 +73,16 @@ if __name__ == '__main__':
             hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
             
             # defining the lower and upper values of HSV,
-            # this will detect yellow colour
+            # this will detect blue colour
             Lower_hsv = np.array([60, 40, 40])
-            Upper_hsv = np.array([150, 255, 255])
+            Upper_hsv = np.array([0, 200, 255])
             
             # creating the mask by eroding,morphing,
             # dilating process
             Mask = cv2.inRange(hsv, Lower_hsv, Upper_hsv)
             # gray = cv2.cvtColor(Frame, cv2.COLOR_BGR2GRAY)
             # (thresh, blackAndWhiteImage) = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
-            Mask = cv2.bitwise_not(Mask)
+            # Mask = cv2.bitwise_not(Mask)
             Mask = cv2.erode(Mask, kernel, iterations=1) 
             Mask = cv2.dilate(Mask, kernel, iterations=1)   
             cv2.imshow('Frame', Mask)
