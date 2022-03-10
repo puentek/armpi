@@ -88,7 +88,7 @@ def no_motion(my_camera):
     status = False
     # print("img: ", img)
     if img is not None:
-        logging.debug("in if")
+        print("in if")
         f = img.copy()
         frame_i = get_mask(f) 
         fps = 16
