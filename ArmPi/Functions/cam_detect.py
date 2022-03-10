@@ -44,6 +44,7 @@ def no_motion(my_camera):
     # while threshold == 20:
     img = my_camera.frame
     status = False
+    print("img: ", img)
     if img is not None:
         f = img.copy()
         frame_i = get_mask(f) 
