@@ -86,7 +86,7 @@ def no_motion(my_camera):
     # while threshold == 20:
     img = my_camera.frame
     status = False
-    # print("img: ", img)
+    print("img: ", img)
     if img is not None:
         f = img.copy()
         frame_i = get_mask(f) 
@@ -119,9 +119,9 @@ if __name__ == '__main__':
     my_camera = Camera.Camera()
     my_camera.camera_open()
     i = 0
-    while i < 500:
-        status = no_motion(my_camera)
-        # print(my_camera.frame)
+    while i < 2000:
+        # status = no_motion(my_camera)
+        print(my_camera.frame)
         # img = my_camera.frame
         i = i + 1
         #hand will begin to move
