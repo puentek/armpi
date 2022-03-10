@@ -120,8 +120,9 @@ if __name__ == '__main__':
     my_camera.camera_open()
     i = 0
     while i < 10:
-        status = no_motion(my_camera)
-        img = my_camera.frame
+        # status = no_motion(my_camera)
+        print(my_camera.frame)
+        # img = my_camera.frame
         i = i + 1
         #hand will begin to move
     my_camera.camera_close()
