@@ -84,7 +84,7 @@ if __name__ == '__main__':
             # (thresh, blackAndWhiteImage) = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY)
             # Mask = cv2.bitwise_not(Mask)
             Mask = cv2.erode(Mask, kernel, iterations=1) 
-            Mask = cv2.dilate(Mask, kernel, iterations=4)   
+            Mask = cv2.dilate(Mask, kernel, iterations=3)   
             cv2.imshow('Frame', Mask)
             key = cv2.waitKey(1)
             if key == 27:
