@@ -87,7 +87,7 @@ if __name__ == '__main__':
             Mask = cv2.erode(Mask, kernel, iterations=1) 
             Mask = cv2.dilate(Mask, kernel, iterations=4)   
             cv2.imshow('Frame', Mask)
-            #cv2.imshow('Frame', Frame)
+            cv2.imshow('Frame', Frame)
             ROI1 = frame[0:180, 0:320]
             faces_rect1 = haar_cascade.detectMultiScale(ROI1, scaleFactor=1.1, minNeighbors=5)
             for (x, y, w, h) in faces_rect1:
