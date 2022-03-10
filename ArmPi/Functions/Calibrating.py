@@ -91,7 +91,7 @@ if __name__ == '__main__':
             ROI1 = frame[0:180, 0:320]
             faces_rect1 = haar_cascade.detectMultiScale(ROI1, scaleFactor=1.1, minNeighbors=5)
             for (x, y, w, h) in faces_rect1:
-                cv.rectangle(ROI1, (x, y), (x+w,y+h), (0,255,0), thickness=2)
+                cv2.rectangle(ROI1, (x, y), (x+w,y+h), (0,255,0), thickness=2)
                 t2 = time.time()
                 if (t2 - t1) > 1:
                     print('I SEE YOU IN 1')
