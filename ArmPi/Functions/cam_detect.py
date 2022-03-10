@@ -82,7 +82,7 @@ def get_mask(frame):
     return Mask
     
 def no_motion(my_camera):
-    threshold = 20
+    threshold = 3000
     # while threshold == 20:
     img = my_camera.frame
     status = False
