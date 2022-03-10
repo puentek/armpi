@@ -108,9 +108,6 @@ def no_motion(my_camera):
                     status = False
                     logging.debug("current status: ", status)
                 cv2.imshow('Frame', frame_new)            
-                key = cv2.waitKey(1)
-                if key == 27:
-                    break
     return status
 
 if __name__ == '__main__':
@@ -118,12 +115,12 @@ if __name__ == '__main__':
     start()
     my_camera = Camera.Camera()
     my_camera.camera_open()
-    i = 0
+    # i = 0
     while True:
-        # status = no_motion(my_camera)
-        print(str(i), my_camera.frame)
+        status = no_motion(my_camera)
+        # print(str(i), my_camera.frame)
         # img = my_camera.frame
-        i = i + 1
+        # i = i + 1
         #hand will begin to move
         key = cv2.waitKey(1)
         if key == 27:
