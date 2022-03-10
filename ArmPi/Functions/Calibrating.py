@@ -64,7 +64,7 @@ if __name__ == '__main__':
     my_camera = Camera.Camera()
     my_camera.camera_open()
     kernel = np.ones((5, 5), np.uint8)
-    haar_cascade = cv.CascadeClassifier('haar_face.xml')
+    haar_cascade = cv2.CascadeClassifier('haar_face.xml')
     while True:
         img = my_camera.frame
         if img is not None:
