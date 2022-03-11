@@ -89,7 +89,7 @@ if __name__ == '__main__':
             Mask = cv2.dilate(Mask, kernel, iterations=4)   
             
             cv2.imshow('Frame', Mask)
-            # cv2.imshow('Frame', Frame)
+            cv2.imshow('Frame', Frame)
             
             key = cv2.waitKey(1)
             if key == 27:
