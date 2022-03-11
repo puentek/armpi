@@ -169,9 +169,14 @@ if __name__ == "__main__":
         mover.move_arm(0, 12, 12)
         sleep(2)
         print("next movement begin")
-        mover.move_arm(0, 14, 14)
-        mover.move_arm(10, 14, 14)
-        mover.move_arm(0, 14, 14)
+        mover.move_arm(0, 16, 16)
+        mover.move_arm(12, 16, 16)
+        mover.move_arm(0, 16, 16)
+        sleep(2)
+        print("next movement begin 3")
+        mover.move_arm(0, 10, 10)
+        mover.move_arm(12, 10, 10)
+        mover.move_arm(0, 10, 10)
         
 
     except:
