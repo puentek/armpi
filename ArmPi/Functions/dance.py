@@ -167,6 +167,11 @@ if __name__ == "__main__":
         mover.move_arm(0, 12, 12)
         mover.move_arm(10, 12, 12)
         mover.move_arm(0, 12, 12)
+        sleep(2)
+        mover.move_arm(0, 14, 14)
+        mover.move_arm(10, 14, 14)
+        mover.move_arm(0, 14, 14)
+
     except:
         print("does not work")
 
