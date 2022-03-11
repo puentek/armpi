@@ -13,6 +13,8 @@ from CameraCalibration.CalibrationConfig import *
 import HiwonderSDK.Board as Board
 import logging
 
+logging.basicConfig(level=logging.DEBUG)
+
 STANDARD_COORDS = {  # colors of the blocks that can be perceived
     "red": (-14.5, 11.5, 1.5),
     "green": (-14.5, 5.5, 1.5),
@@ -168,17 +170,19 @@ if __name__ == "__main__":
         mover.move_arm(10, 12, 12)
         mover.move_arm(0, 12, 12)
         sleep(2)
-        print("next movement begin")
+        logging.debug(f"next movement begin")
         mover.move_arm(0, 16, 16)
         mover.move_arm(12, 16, 16)
         mover.move_arm(0, 16, 16)
         sleep(2)
-        print("next movement begin 3")
+        logging.debug(f"next movement begin 3")
         mover.move_arm(0, 10, 10)
         mover.move_arm(12, 10, 10)
         mover.move_arm(0, 10, 10)
-        
-
+        sleep(2)
+        mover.move_arm(0, 12, 12)
+        mover.move_arm(10, 12, 12)
+        mover.move_arm(0, 12, 12)
     except:
         print("does not work")
 
