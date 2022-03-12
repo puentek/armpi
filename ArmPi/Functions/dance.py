@@ -239,6 +239,7 @@ if __name__ == "__main__":
         else:
             status = no_motion(my_camera)
             if status == True:
+                #initial z movement 
                 mover.move_arm(-20, 12, 25)
                 time.sleep(1)
                 print("1")
@@ -251,16 +252,31 @@ if __name__ == "__main__":
                 mover.move_arm(5, 12, 5)
                 print("4")
                 time.sleep(1)
+                #backwards Z movement 
                 mover.move_arm(-20, 12, 10)
                 print("5")
                 time.sleep(1)
                 mover.move_arm(20, 12, 10)
                 time.sleep(1)
                 print("6")
+                #haha show me what you got your turn
                 mover.move_arm(0, 12, 25)
                 time.sleep(1)
                 print("7")
-                
+
+                #up and down sooooon
+                mover.move_arm(0, 0, 0)
+                time.sleep(1)
+                print("8")
+                mover.move_arm(0, 12, 25)
+                time.sleep(1)
+                print("9")
+                mover.move_arm(0, 0, 0)
+                time.sleep(1)
+                print("10")
+                mover.move_arm(0, 12, 25)
+                time.sleep(1)
+                print("11")
 
                 
                
