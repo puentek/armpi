@@ -240,10 +240,13 @@ if __name__ == "__main__":
             status = no_motion(my_camera)
             if status == True:
                 mover.move_arm(-20, 12, 25)
+                time.sleep(2)
                 print("1")
                 mover.move_arm(15, 12, 15)
+                time.sleep(2)
                 print("2")
                 mover.move_arm(20, 12, 10)
+                time.sleep(2)
                 print("3")
                 mover.move_arm(20, 12, -24)
                 print("4")
