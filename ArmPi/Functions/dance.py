@@ -224,6 +224,10 @@ if __name__ == "__main__":
 
     my_camera = Camera.Camera()
     my_camera.camera_open()
+
+# actions ={"0": [[   ]]  } # empty dictionary
+
+
     # i = 0
     t1 = time.time()
     while True:
@@ -240,74 +244,74 @@ if __name__ == "__main__":
             status = no_motion(my_camera)
             if status == True:
                 #initial z movement 
-                mover.move_arm(-20, 12, 25)
-                time.sleep(1)
-                print("1")
-                mover.move_arm(15, 12, 15)
-                time.sleep(1)
-                print("2")
-                mover.move_arm(-20, 12, 10)
-                time.sleep(1)
-                print("3")
-                mover.move_arm(5, 12, 5)
-                print("4")
-                time.sleep(1)
-                #backwards Z movement 
-                mover.move_arm(-20, 12, 10)
-                print("5")
-                time.sleep(1)
-                mover.move_arm(20, 12, 10)
-                time.sleep(1)
-                print("6")
-                #haha show me what you got your turn
-                mover.move_arm(0, 12, 25)
-                time.sleep(1)
-                print("7")
+                # mover.move_arm(-20, 12, 25)
+                # time.sleep(1)
+                # print("1")
+                # mover.move_arm(15, 12, 15)
+                # time.sleep(1)
+                # print("2")
+                # mover.move_arm(-20, 12, 10)
+                # time.sleep(1)
+                # print("3")
+                # mover.move_arm(5, 12, 5)
+                # print("4")
+                # time.sleep(1)
+                # #backwards Z movement 
+                # mover.move_arm(-20, 12, 10)
+                # print("5")
+                # time.sleep(1)
+                # mover.move_arm(20, 12, 10)
+                # time.sleep(1)
+                # print("6")
+                # #haha show me what you got your turn
+                # mover.move_arm(0, 12, 25)
+                # time.sleep(1)
+                # print("7")
                 
 
-                #left dab
+                # #left dab
 
-                mover.move_arm(-10, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(-10, 20, 25)
-                time.sleep(1.)
-                mover.move_arm(-10, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(-10, 20, 25)
-                time.sleep(1.)
-                mover.move_arm(-10, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(-10, 20, 25)
-                time.sleep(1.)
+                # mover.move_arm(-10, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(-10, 20, 25)
+                # time.sleep(1.)
+                # mover.move_arm(-10, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(-10, 20, 25)
+                # time.sleep(1.)
+                # mover.move_arm(-10, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(-10, 20, 25)
+                # time.sleep(1.)
 
                 
-                #center dab 
-                mover.move_arm(0, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(0, 20, 25)
-                time.sleep(1.)
-                mover.move_arm(0, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(0, 20, 25)
-                time.sleep(1.)
-                mover.move_arm(0, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(0, 20, 25)
-                time.sleep(1.)
+                # #center dab 
+                # mover.move_arm(0, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(0, 20, 25)
+                # time.sleep(1.)
+                # mover.move_arm(0, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(0, 20, 25)
+                # time.sleep(1.)
+                # mover.move_arm(0, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(0, 20, 25)
+                # time.sleep(1.)
 
-                #right dab
-                mover.move_arm(10, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(10, 20, 25)
-                time.sleep(1.)
-                mover.move_arm(10, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(10, 20, 25)
-                time.sleep(1.)
-                mover.move_arm(10, 8, 12)
-                time.sleep(1.)
-                mover.move_arm(10, 20, 25)
-                time.sleep(1.)    
+                # #right dab
+                # mover.move_arm(10, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(10, 20, 25)
+                # time.sleep(1.)
+                # mover.move_arm(10, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(10, 20, 25)
+                # time.sleep(1.)
+                # mover.move_arm(10, 8, 12)
+                # time.sleep(1.)
+                # mover.move_arm(10, 20, 25)
+                # time.sleep(1.)    
 
                 #up and down sooooon
                 mover.move_arm(0, 25, 0)
