@@ -239,11 +239,11 @@ if __name__ == "__main__":
         else:
             status = no_motion(my_camera)
             if status == True:
-                mover.move_arm(-20, 12, 15)
+                mover.move_arm(-20, 12, 25)
                 print("1")
-                mover.move_arm(15, 12, 10)
+                mover.move_arm(15, 12, 15)
                 print("2")
-                mover.move_arm(20, 12, 5)
+                mover.move_arm(20, 12, 10)
                 print("3")
                 mover.move_arm(20, 12, -24)
                 print("4")
