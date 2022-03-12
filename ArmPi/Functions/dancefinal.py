@@ -263,7 +263,7 @@ if __name__ == "__main__":
     mover.move_arm(0,25, 20)
     time.sleep(3)
     mover.set_gripper("open")
-    time.sleep(1)
+    time.sleep(2)
     # i = 0
     t1 = time.time()
     i = 0 
