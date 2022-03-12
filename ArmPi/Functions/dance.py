@@ -264,6 +264,50 @@ if __name__ == "__main__":
                 time.sleep(1)
                 print("7")
 
+                #left dab
+
+                mover.move_arm(-10, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(-10, 20, 25)
+                time.sleep(1.)
+                mover.move_arm(-10, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(-10, 20, 25)
+                time.sleep(1.)
+                mover.move_arm(-10, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(-10, 20, 25)
+                time.sleep(1.)
+
+                
+                #center dab 
+                mover.move_arm(0, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(0, 20, 25)
+                time.sleep(1.)
+                mover.move_arm(0, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(0, 20, 25)
+                time.sleep(1.)
+                mover.move_arm(0, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(0, 20, 25)
+                time.sleep(1.)
+
+                #right dab
+                mover.move_arm(10, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(10, 20, 25)
+                time.sleep(1.)
+                mover.move_arm(10, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(10, 20, 25)
+                time.sleep(1.)
+                mover.move_arm(10, 8, 12)
+                time.sleep(1.)
+                mover.move_arm(10, 20, 25)
+                time.sleep(1.)    
+
                 #up and down sooooon
                 mover.move_arm(0, 25, 0)
                 time.sleep(1)
