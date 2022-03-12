@@ -265,16 +265,16 @@ if __name__ == "__main__":
                 print("7")
 
                 #up and down sooooon
-                mover.move_arm(0, 0, 0)
+                mover.move_arm(0, 25, 0)
                 time.sleep(1)
                 print("8")
-                mover.move_arm(0, 12, 25)
+                mover.move_arm(20, 0, 25)
                 time.sleep(1)
                 print("9")
-                mover.move_arm(0, 0, 0)
+                mover.move_arm(0, 25, 0)
                 time.sleep(1)
                 print("10")
-                mover.move_arm(0, 12, 25)
+                mover.move_arm(20, 0, 25)
                 time.sleep(1)
                 print("11")
 
