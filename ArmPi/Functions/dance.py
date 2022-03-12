@@ -239,10 +239,10 @@ if __name__ == "__main__":
         else:
             status = no_motion(my_camera)
             if status == True:
-                mover.move_arm(10, 12, 20)
-                mover.move_arm(10, 10, 22)
-                mover.move_arm(10, 12, 22)
-                mover.move_arm(10, 10, 20)
+                mover.move_arm(20, 12, 20)
+                mover.move_arm(-20, -12, 22)
+                mover.move_arm(20, 12, -22)
+                mover.move_arm(20, 10, -20)
                 time.sleep(2)
                 
     my_camera.camera_close()
