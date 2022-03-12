@@ -251,7 +251,16 @@ if __name__ == "__main__":
                 mover.move_arm(5, 12, 5)
                 print("4")
                 time.sleep(1)
-                
+                mover.move_arm(-20, 12, 10)
+                print("5")
+                time.sleep(1)
+                mover.move_arm(-20, 12, 10)
+                time.sleep(1)
+                print("6")
+                mover.move_arm(-20, 12, 25)
+                time.sleep(1)
+                print("7")
+
     my_camera.camera_close()
     cv2.destroyAllWindows()
 
