@@ -245,10 +245,10 @@ if __name__ == "__main__":
                 mover.move_arm(15, 12, 15)
                 time.sleep(2)
                 print("2")
-                mover.move_arm(20, 12, 10)
+                mover.move_arm(10, 12, 10)
                 time.sleep(2)
                 print("3")
-                mover.move_arm(20, 12, -24)
+                mover.move_arm(5, 12, 5)
                 print("4")
                 time.sleep(2)
                 
