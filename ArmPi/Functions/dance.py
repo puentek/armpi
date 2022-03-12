@@ -257,7 +257,7 @@ if __name__ == "__main__":
                 mover.move_arm(-20, 12, 10)
                 time.sleep(1)
                 print("6")
-                mover.move_arm(-10, 12, 25)
+                mover.move_arm(0, 12, 25)
                 time.sleep(1)
                 print("7")
 
